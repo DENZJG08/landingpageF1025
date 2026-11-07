@@ -1,53 +1,39 @@
 <!doctype html>
 <html lang="es-MX">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Impulse-X — Equipo de cohetería. Lanzamientos por venir." />
-    <title>Impulse-X</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="launch-page">
-      <div class="stars" aria-hidden="true"></div>
-      <div class="orbital orbital--one" aria-hidden="true"></div>
-      <div class="orbital orbital--two" aria-hidden="true"></div>
-      <div class="glow" aria-hidden="true"></div>
-
-      <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="Impulse-X, inicio">
-          <span class="brand__mark"></span>
-          <span>IMPULSE-<b>X</b></span>
-        </a>
-        <span class="mission-status"><i></i> SISTEMA EN PREPARACIÓN</span>
-      </header>
-
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="hero__copy">
-          <p class="eyebrow">EQUIPO DE COHETERÍA · ROCKET TEC</p>
-          <h1 id="hero-title">Lanzamientos<br /><em>por venir</em></h1>
-          <p class="intro">Estamos preparando la siguiente trayectoria. Pronto compartiremos el avance, los resultados y la historia detrás de cada misión.</p>
-          <div class="divider" aria-hidden="true"><span></span><i></i><span></span></div>
-          <p class="coordinate">IMPULSE-X / MISSION CONTROL</p>
-        </div>
-
-        <div class="hero__visual" aria-hidden="true">
-          <div class="target-ring target-ring--outer"></div>
-          <div class="target-ring target-ring--inner"></div>
-          <div class="rocket-line"></div>
-          <img class="logo" src="assets/impulse-x-logo.png" alt="" />
-        </div>
-      </section>
-
-      <footer class="site-footer">
-        <span>ROCKET TEC</span>
-        <span class="footer-rule"></span>
-        <span>IMPULSE-X · 2026</span>
-      </footer>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Impulse-X — Equipo de cohetería de Rocket Tec.">
+  <title>Impulse-X · Rocket Tec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#e91d0a;--deep-red:#be0302;--ember:#ff513b;--silver:#b6b6b6;--white:#f5f5f5}*{box-sizing:border-box}html{background:#000;scroll-behavior:smooth}body{margin:0;min-width:320px;color:var(--white);font-family:Montserrat,Arial,sans-serif}.page{isolation:isolate;min-height:100svh;position:relative;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;background:radial-gradient(ellipse 45% 75% at 88% 47%,rgba(124,5,0,.2),transparent 74%),linear-gradient(124deg,#000 0%,#040404 48%,#110100 100%)}.page:before{content:"";position:absolute;z-index:-1;inset:0;opacity:.25;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:74px 74px;mask-image:linear-gradient(to bottom,#000,transparent 82%)}.stars{position:absolute;inset:0;z-index:-1;opacity:.5;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#e91d0a .8px,transparent 1.4px);background-size:89px 89px,157px 157px;background-position:5px 30px,57px 5px;mask-image:linear-gradient(to right,#000,transparent 76%)}.glow{position:absolute;z-index:-1;width:50vw;height:50vw;min-width:480px;min-height:480px;right:-14vw;top:18%;border-radius:50%;background:radial-gradient(circle,rgba(233,29,10,.16),transparent 62%);filter:blur(24px);animation:breathe 5s ease-in-out infinite}.header,.footer{padding-inline:clamp(1.5rem,6vw,7rem);display:flex;align-items:center;justify-content:space-between}.header{min-height:96px;border-bottom:1px solid rgba(255,255,255,.1)}.brand{color:var(--white);text-decoration:none;font-family:"Barlow Condensed",sans-serif;font-style:italic;letter-spacing:.035em;font-size:clamp(1.5rem,2.4vw,2.25rem);font-weight:700;display:flex;align-items:center;gap:.65rem}.brand b,h1 em{color:var(--red);font-style:inherit}.mark{width:9px;height:1.65rem;background:var(--red);box-shadow:3px 0 0 rgba(233,29,10,.28);transform:skewY(-24deg)}.status,.coordinate,.footer{font-size:.63rem;letter-spacing:.18em;color:var(--silver);font-weight:600}.status{display:flex;align-items:center;gap:.55rem}.status i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red);animation:pulse 1.6s ease-in-out infinite}.hero{min-height:0;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(290px,.92fr);align-items:center;padding:clamp(2.75rem,6vw,7rem);gap:clamp(1rem,4vw,4rem)}.copy{position:relative;z-index:2;max-width:700px}.eyebrow{color:var(--silver);font-size:.68rem;font-weight:700;letter-spacing:.2em;margin:0 0 1.35rem}h1{margin:0;text-transform:uppercase;font-family:"Barlow Condensed",Impact,sans-serif;font-style:italic;font-size:clamp(4.6rem,9.5vw,10.5rem);line-height:.78;letter-spacing:-.025em;font-weight:700;animation:title-float 6s ease-in-out infinite}h1:after{content:"";display:block;width:clamp(72px,10vw,150px);height:5px;margin-top:.35em;background:linear-gradient(90deg,var(--red),transparent);animation:line-pulse 3s ease-in-out infinite}.intro{max-width:470px;line-height:1.75;color:#c8c8c8;font-size:clamp(.83rem,1.15vw,1rem);margin:2.15rem 0 1.4rem}.divider{display:flex;align-items:center;gap:.5rem;width:min(280px,70%)}.divider span{height:1px;flex:1;background:rgba(255,255,255,.25)}.divider i{width:6px;height:6px;background:var(--red);transform:rotate(45deg)}.coordinate{margin:1.15rem 0 0}.visual{height:min(57vw,610px);min-height:360px;position:relative;display:grid;place-items:center}.logo{width:min(94%,530px);max-height:520px;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 20px 45px rgba(0,0,0,.75));animation:logo-launch 5.5s ease-in-out infinite}.ring{border:1px solid rgba(233,29,10,.35);position:absolute;border-radius:50%;transform:rotate(-32deg)}.ring.one{width:95%;height:51%}.ring.two{width:60%;height:100%;border-color:rgba(255,255,255,.14);animation:ring-drift 8s ease-in-out infinite}.line{position:absolute;width:115%;height:1px;top:49%;background:linear-gradient(90deg,transparent,rgba(233,29,10,.85),transparent);transform:rotate(-30deg);box-shadow:0 0 11px rgba(233,29,10,.45)}.countdown{position:relative;z-index:3;isolation:isolate;width:min(100% - 3rem,880px);margin:0 auto clamp(3rem,7vw,7rem);padding:clamp(2.1rem,5vw,3.8rem) clamp(1rem,5vw,3.2rem);overflow:hidden;border:1px solid rgba(255,81,59,.44);border-radius:18px;background:radial-gradient(ellipse at 50% 44%,rgba(190,3,2,.25),rgba(6,1,1,.92) 67%);box-shadow:0 0 32px rgba(233,29,10,.22),inset 0 0 42px rgba(233,29,10,.1);text-align:center}.countdown:before{content:"";position:absolute;z-index:-1;width:min(97vw,700px);aspect-ratio:1;left:50%;top:50%;border-radius:50%;background:conic-gradient(from 20deg,transparent 0 6%,var(--deep-red) 11%,transparent 17% 31%,var(--ember) 39%,transparent 47% 65%,var(--red) 74%,transparent 82%);-webkit-mask:radial-gradient(circle,transparent 63%,#000 64% 65%,transparent 66%);mask:radial-gradient(circle,transparent 63%,#000 64% 65%,transparent 66%);transform:translate(-50%,-50%);opacity:.85;filter:drop-shadow(0 0 13px var(--red));animation:spin 22s linear infinite}.countdown:after{content:"";position:absolute;z-index:-1;width:min(83vw,580px);aspect-ratio:1;left:50%;top:50%;border:1px solid rgba(255,81,59,.34);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 26px rgba(233,29,10,.18),inset 0 0 24px rgba(233,29,10,.07)}.countdown h2{margin:0 0 1.25rem;color:#ffd4cf;font-size:.62rem;font-weight:700;letter-spacing:.24em}.countdown h2:before{content:"●";color:var(--red);margin-right:.55rem;text-shadow:0 0 10px var(--red)}.clock{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.45rem,2vw,1.25rem)}.unit{min-width:0;position:relative;padding:.65rem .25rem}.unit:not(:last-child):after{content:"";position:absolute;top:18%;right:calc(clamp(.45rem,2vw,1.25rem) / -2);height:64%;width:1px;background:linear-gradient(transparent,rgba(255,81,59,.7),transparent)}.number{display:block;color:var(--white);font-family:"Barlow Condensed",Impact,sans-serif;font-size:clamp(2.4rem,6vw,5rem);font-weight:700;line-height:.85;font-variant-numeric:tabular-nums;letter-spacing:.035em;text-shadow:0 0 9px rgba(255,81,59,.9),0 0 26px rgba(233,29,10,.45)}.label{display:block;margin-top:.6rem;color:#ffc0b8;font-size:clamp(.5rem,1vw,.62rem);font-weight:600;letter-spacing:.16em;text-transform:uppercase}.note{min-height:1.2em;margin:1.05rem 0 0;color:#f5b2aa;font-size:.68rem;letter-spacing:.08em}.footer{min-height:66px;border-top:1px solid rgba(255,255,255,.1);gap:1rem}.rule{height:1px;flex:1;background:linear-gradient(90deg,rgba(255,255,255,.15),transparent)}@keyframes logo-launch{0%,100%{transform:translate(0) rotate(0)}45%{transform:translate(0,-12px) rotate(-.8deg)}65%{transform:translate(4px,-7px) rotate(.45deg)}}@keyframes title-float{0%,100%{transform:translateY(0);text-shadow:none}50%{transform:translateY(-4px);text-shadow:0 0 18px rgba(233,29,10,.14)}}@keyframes line-pulse{50%{width:clamp(95px,14vw,195px);opacity:.65}}@keyframes ring-drift{50%{transform:rotate(-25deg) scale(1.04)}}@keyframes pulse{50%{opacity:.25;transform:scale(.65)}}@keyframes breathe{50%{opacity:.55;transform:scale(1.08)}}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}@media(max-width:760px){.header{min-height:74px}.status{font-size:.52rem;letter-spacing:.1em}.hero{grid-template-columns:1fr;padding-top:4.25rem;padding-bottom:2.25rem;gap:0}.visual{min-height:0;height:min(80vw,390px);margin-top:1rem}.logo{width:min(87%,390px);max-height:390px}.intro{margin-top:2rem}.footer{min-height:52px;font-size:.5rem;letter-spacing:.11em}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="stars" aria-hidden="true"></div><div class="glow" aria-hidden="true"></div>
+    <header class="header"><a class="brand" href="#inicio" aria-label="Impulse-X, inicio"><span class="mark"></span><span>IMPULSE-<b>X</b></span></a><span class="status"><i></i>SISTEMA EN PREPARACIÓN</span></header>
+    <section class="hero" id="inicio" aria-labelledby="titulo">
+      <div class="copy"><p class="eyebrow">EQUIPO DE COHETERÍA · ROCKET TEC</p><h1 id="titulo">Lanzamientos<br><em>por venir</em></h1><p class="intro">Estamos preparando la siguiente trayectoria. Pronto compartiremos el avance, los resultados y la historia detrás de cada misión.</p><div class="divider" aria-hidden="true"><span></span><i></i><span></span></div><p class="coordinate">IMPULSE-X / MISSION CONTROL</p></div>
+      <div class="visual" aria-hidden="true"><div class="ring one"></div><div class="ring two"></div><div class="line"></div><img class="logo" src="assets/impulse-x-logo.png" alt=""></div>
+    </section>
+    <!-- Agrega la fecha en data-launch: YYYY-MM-DDTHH:MM:SS-07:00 -->
+    <section class="countdown" id="countdown" data-launch="" aria-label="Cuenta regresiva para el próximo lanzamiento">
+      <h2>PRÓXIMA VENTANA DE LANZAMIENTO</h2>
+      <div class="clock"><div class="unit"><strong class="number" data-unit="days">--</strong><span class="label">Días</span></div><div class="unit"><strong class="number" data-unit="hours">--</strong><span class="label">Horas</span></div><div class="unit"><strong class="number" data-unit="minutes">--</strong><span class="label">Minutos</span></div><div class="unit"><strong class="number" data-unit="seconds">--</strong><span class="label">Segundos</span></div></div>
+      <p class="note" id="note">FECHA DE DESPEGUE POR ANUNCIAR</p>
+    </section>
+    <footer class="footer"><span>ROCKET TEC</span><span class="rule"></span><span>IMPULSE-X · 2026</span></footer>
+  </main>
+  <script>
+    const box=document.querySelector('#countdown'),note=document.querySelector('#note'),target=box.dataset.launch?new Date(box.dataset.launch):null;
+    const show=(unit,value)=>document.querySelector('[data-unit="'+unit+'"]').textContent=String(value).padStart(2,'0');
+    function update(){if(!target||Number.isNaN(target.getTime()))return;let left=Math.max(0,Math.floor((target-new Date())/1000)),v={days:Math.floor(left/86400)};left-=v.days*86400;v.hours=Math.floor(left/3600);left-=v.hours*3600;v.minutes=Math.floor(left/60);v.seconds=left%60;Object.entries(v).forEach(([u,n])=>show(u,n));note.textContent=target<=new Date()?'VENTANA DE LANZAMIENTO ACTIVA':'DESPEGUE PROGRAMADO · '+target.toLocaleString('es-MX',{dateStyle:'long',timeStyle:'short'});}
+    update();if(target&&!Number.isNaN(target.getTime()))setInterval(update,1000);
+  </script>
+</body>
 </html>
